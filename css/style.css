@@ -1,0 +1,41 @@
+.coco_logo{
+    position: relative;
+    text-align: center;
+}
+
+.coco_logo img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    display: block;
+    left: 35%;
+    top: 50px;
+}
+
+.text{
+
+}
+
+.background{
+    height: 100%;
+    width: auto;
+    margin: auto;
+    background-image: url(../img/coco_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.coco{
+    position: relative;
+    text-align: center;
+}
+
+.coco img{
+    width: 20%;
+    position: absolute;
+    display: block;
+    left: 40%;
+    bottom: 0;
+}
