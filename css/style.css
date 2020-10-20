@@ -1,4 +1,5 @@
 .coco_logo{
+    z-index: 999;
     position: relative;
     text-align: center;
 }
@@ -16,14 +17,72 @@
 
 }
 
+.building_1 img{
+    width: 908px;
+    height: 602px;
+    width: auto;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 100px;
+    z-index: 8;
+    animation-name : building_1_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.building_2 img{
+    width: 712px;
+    height: 1349px;
+    width: auto;
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 500px;
+    animation-name: building_2_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.building_3 img{
+    width: 1046px;
+    height: 1236px;
+    width: auto;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 90px;
+    animation-name: building_3_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.building_4 img{
+    width: 964px;
+    height: 1602px;
+    width: auto;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -300px;
+    animation-name: building_4_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
 .background{
     height: 100%;
     width: auto;
     margin: auto;
-    background-image: url(../img/coco_background.jpg);
+    background-image: url(../img/coco_background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: background_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 
 }
 
@@ -38,4 +97,113 @@
     display: block;
     left: 40%;
     bottom: 0;
+    animation-name: coco_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes coco_move{
+    from{
+        left: 40%;
+    }
+
+    33%{
+        left: 45%;
+    }
+
+    66%{
+        left: 35%;
+    }
+
+    to{
+        left: 40%;
+    }
+}
+
+@keyframes building_1_move{
+    from{
+        right: 100px;
+    }
+
+    33%{
+        right: 130px;
+    }
+
+    66%{
+        right: 70px;
+    }
+
+    to{
+        right: 100px;
+    }
+}
+
+@keyframes building_2_move{
+    from{
+        right: 500px;
+    }
+
+    33%{
+        right: 520px;
+    }
+
+    66%{
+        right: 480px;
+    }
+
+    to{
+        right: 500px;
+    }
+}
+
+@keyframes building_3_move{
+    from{
+        left: 90px;
+    }
+
+    33%{
+        left: 70px;
+    }
+
+    66%{
+        left: 110px;
+    }
+
+    to{
+        left: 90px;
+    }
+}
+
+@keyframes building_4_move{
+    from{
+        left: -300px;
+    }
+
+    33%{
+        left: -350px;
+    }
+
+    66%{
+        left: -250px;
+    }
+
+    to{
+        left: -300px;
+    }
+}
+
+@keyframes background_move{
+    0%{
+        background-position: 50%;
+    }
+    33%{
+        background-position: 52%;
+    }
+    66%{
+        background-position: 48%;
+    }
+    100%{
+        background-position: 50%;
+    }
 }
