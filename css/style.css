@@ -14,17 +14,29 @@
 }
 
 .text{
+    text-align: center;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    top: 25%;
+    z-index: 998;
+    color: white;
+}
 
+.text h3{
+    font-size: 2.0em;
+}
+
+.text p{
+    font-size: 1.2em;
 }
 
 .building_1 img{
-    width: 908px;
-    height: 602px;
-    width: auto;
+    width: 34%;
+    height: auto;
     position: absolute;
     display: block;
     bottom: 0;
-    right: 100px;
     z-index: 8;
     animation-name : building_1_move;
     animation-duration: 5s;
@@ -33,13 +45,11 @@
 }
 
 .building_2 img{
-    width: 712px;
-    height: 1349px;
-    width: auto;
+    width: 28%;
+    height: auto;
     position: absolute;
     display: block;
     bottom: 0px;
-    right: 500px;
     animation-name: building_2_move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -47,26 +57,22 @@
 }
 
 .building_3 img{
-    width: 1046px;
-    height: 1236px;
-    width: auto;
+    width: 45%;
+    height: auto;
     position: absolute;
     display: block;
     bottom: 0;
-    left: 90px;
     animation-name: building_3_move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
 .building_4 img{
-    width: 964px;
-    height: 1602px;
-    width: auto;
+    width: 34%;
+    height: auto;
     position: absolute;
     display: block;
     bottom: 0;
-    left: -300px;
     animation-name: building_4_move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -76,7 +82,7 @@
     height: 100%;
     width: auto;
     margin: auto;
-    background-image: url(../img/coco_background.png);
+    background-image: url(../img/coco_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,6 +95,7 @@
 .coco{
     position: relative;
     text-align: center;
+    z-index: 9;
 }
 
 .coco img{
@@ -109,11 +116,11 @@
     }
 
     33%{
-        left: 45%;
+        left: 50%;
     }
 
     66%{
-        left: 35%;
+        left: 30%;
     }
 
     to{
@@ -123,73 +130,73 @@
 
 @keyframes building_1_move{
     from{
-        right: 100px;
+        right: 10%;
     }
 
     33%{
-        right: 130px;
+        right: 12%;
     }
 
     66%{
-        right: 70px;
+        right: 8%;
     }
 
     to{
-        right: 100px;
+        right: 10%;
     }
 }
 
 @keyframes building_2_move{
     from{
-        right: 500px;
+        right: 18%;
     }
 
     33%{
-        right: 520px;
+        right: 19.5%;
     }
 
     66%{
-        right: 480px;
+        right: 16.5%;
     }
 
     to{
-        right: 500px;
+        right: 18%;
     }
 }
 
 @keyframes building_3_move{
     from{
-        left: 90px;
+        left: 2%;
     }
 
     33%{
-        left: 70px;
+        left: 0%;
     }
 
     66%{
-        left: 110px;
+        left: 4%;
     }
 
     to{
-        left: 90px;
+        left: 2%;
     }
 }
 
 @keyframes building_4_move{
     from{
-        left: -300px;
+        left: -15%;
     }
 
     33%{
-        left: -350px;
+        left: -18%;
     }
 
     66%{
-        left: -250px;
+        left: -12%;
     }
 
     to{
-        left: -300px;
+        left: -15%;
     }
 }
 
